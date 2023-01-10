@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hej og hå</title>
+    <style>
+        body {
+            margin-left: 30px;
+            /*background-color: black;*/
+        }
+        h1 {
+            color: rgb(119, 119, 119);
+            padding-top: 10px;
+        }
+        div {
+            color: rgb(119, 119, 119);
+            margin-left: 20px;
+        }
+        button {
+            margin: 3px;
+            padding: 10px;
+            font-size: large;
+        }
+        img {
+            margin-left: 300px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Hej, mitt navn er Martin.</h1>
+    
+    <div>
+        Veggen min er:
+    </div>
+    <ul>
+        <div><button onclick="colorChangeWhite()">Hvit</button></div>
+        <div><button onclick="colorChangeYellow()">Litt mer gulbrun-aktig (spørs på lyset)</button></div>
+        <div><button onclick="colorChangeBlack()">Ganske mørk (om natten)</button></div>
+    </ul>
+    <img src="https://www.nicepng.com/png/full/159-1599987_facebook-thumbs-up-transparent-thumbs-up-through-wall.png">
+    <script>
+                  
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+          
+        function colorChangeYellow() {
+            changeColor('#a79855');
+        } 
+
+        function colorChangeBlack() {
+            changeColor('black');
+        } 
+
+        function colorChangeWhite() {
+            changeColor('white');
+        } 
+    </script>
+</body>
+
+</html>
